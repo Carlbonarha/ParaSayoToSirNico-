@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background: #f4f6f8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    background: #1a73e8;
+    color: white;
+    padding: 16px 24px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .login-box {
+    background: white;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .login-box h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #202124;
+  }
+
+  .login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+
+  .login-box button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #1a73e8;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .login-box button:hover {
+    background: #155ab6;
+  }
+
+  .forgot {
+    text-align: center;
+    margin: 12px 0;
+    font-size: 13px;
+  }
+
+  .forgot a {
+    color: #1a73e8;
+    text-decoration: none;
+  }
+
+  .divider {
+    text-align: center;
+    margin: 16px 0;
+    color: #888;
+    font-size: 13px;
+  }
+
+  .social-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .social-btn:hover {
+    background: #f8f9fa;
+  }
+</style>
+</head>
+<body>
+
+<header>🌞 Sun-Son Solar inc.</header>
+
+<div class="wrapper">
+  <div class="login-box">
+    <h2>Log in</h2>
+    
+    <input type="text" placeholder="Username" />
+    <input type="password" placeholder="Password" />
+    
+    <div class="forgot">
+      <a href="#">Forgot password?</a>
+    </div>
+    
+    <button>Log in</button>
+    
+    <div class="divider">or log in using</div>
+    
+    <button class="social-btn">Continue with Google</button>
+    <button class="social-btn">Continue with Facebook</button>
+    <button class="social-btn">Continue with Microsoft</button>
+  </div>
+</div>
+
+</body>
+</html>
