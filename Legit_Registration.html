@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #f4f6f8;
+            color: #202124;
+        }
+
+        header {
+            position: relative;
+            min-height: 68px;
+            padding: 16px 24px 12px;
+            background: #1a73e8;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .header-nav {
+            position: absolute;
+            right: 24px;
+            bottom: 10px;
+            display: flex;
+            gap: 18px;
+            font-size: 14px;
+        }
+
+        .header-nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .header-nav a:hover {
+            color: #ffd400;
+        }
+
+        main {
+            min-height: calc(100vh - 68px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 32px 16px;
+        }
+
+        .registration-card {
+            width: 100%;
+            max-width: 620px;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(31, 41, 55, 0.12);
+        }
+
+        h1 {
+            margin-bottom: 8px;
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .intro {
+            margin-bottom: 24px;
+            color: #6b7280;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        .field.full-width {
+            grid-column: 1 / -1;
+        }
+
+        label {
+            color: #374151;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 7px;
+            background: white;
+            color: #202124;
+            font-size: 14px;
+        }
+
+        input:focus,
+        select:focus {
+            outline: 2px solid rgba(26, 115, 232, 0.25);
+            border-color: #1a73e8;
+        }
+
+        .terms {
+            display: flex;
+            align-items: flex-start;
+            gap: 9px;
+            margin-top: 22px;
+            color: #4b5563;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+
+        .terms input {
+            width: 16px;
+            height: 16px;
+            flex: 0 0 auto;
+            margin-top: 1px;
+            accent-color: #1a73e8;
+        }
+
+        .terms a {
+            color: #1a73e8;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 22px;
+            padding: 12px;
+            border: 0;
+            border-radius: 7px;
+            background: #1a73e8;
+            color: white;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #155fc0;
+        }
+
+        @media (max-width: 620px) {
+            header {
+                padding-bottom: 48px;
+            }
+
+            .header-nav {
+                right: 24px;
+                bottom: 12px;
+                gap: 12px;
+                font-size: 12px;
+            }
+
+            main {
+                align-items: flex-start;
+                padding-top: 24px;
+            }
+
+            .registration-card {
+                padding: 22px 18px;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .field.full-width {
+                grid-column: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        🌞 Sun-Son Solar inc.
+        <nav class="header-nav" aria-label="Main navigation">
+            <a href="Legit_Registration.html">Register</a>
+            <a href="#services">Services</a>
+            <a href="#products">Products</a>
+            <a href="Matondo_Registration.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <form class="registration-card" id="register">
+            <h1>Create an account</h1>
+            <p class="intro">Register to get started with Sun-Son Solar.</p>
+
+            <div class="form-grid">
+                <div class="field">
+                    <label for="first-name">First name</label>
+                    <input id="first-name" name="first-name" type="text" placeholder="Enter first name" required>
+                </div>
+
+                <div class="field">
+                    <label for="last-name">Last name</label>
+                    <input id="last-name" name="last-name" type="text" placeholder="Enter last name" required>
+                </div>
+
+                <div class="field full-width">
+                    <label for="email">Email address</label>
+                    <input id="email" name="email" type="email" placeholder="Enter email address" required>
+                </div>
+
+                <div class="field full-width">
+                    <label for="username">Username</label>
+                    <input id="username" name="username" type="text" placeholder="Enter username" required>
+                </div>
+
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="password" placeholder="Enter password" required>
+                </div>
+
+                <div class="field">
+                    <label for="confirm-password">Confirm password</label>
+                    <input id="confirm-password" name="confirm-password" type="password" placeholder="Confirm password" required>
+                </div>
+
+                <div class="field">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="" selected disabled>Select gender</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="Paul Lovindino">Paul Lovindino</option>
+                        <option value="prefer-not-to-say">Prefer not to say</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="birthdate">Birthdate</label>
+                    <input id="birthdate" name="birthdate" type="date" required>
+                </div>
+            </div>
+
+            <label class="terms" for="terms">
+                <input id="terms" name="terms" type="checkbox" required>
+                <span>I agree to the <a href="#terms-and-conditions">terms and conditions</a>.</span>
+            </label>
+
+            <button type="submit">Register</button>
+        </form>
+    </main>
+</body>
+</html>
